@@ -9,6 +9,7 @@ import { Toaster } from "react-hot-toast";
 import Navbar from "./components/layout/Navbar";
 import Home from "./pages/Home";
 import Movies from "./pages/Movies";
+import Footer from "./components/layout/Footer";
 
 const App = () => {
 
@@ -38,6 +39,7 @@ const App = () => {
         {/**/}
 
       </Routes>
+      {!isAdminRoute && <Footer />}
     </BrowserRouter>
   );
 };
