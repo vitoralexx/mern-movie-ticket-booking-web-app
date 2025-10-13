@@ -18,7 +18,6 @@ const App = () => {
 
   return (
     <>
-      <Toaster />
       {!isAdminRoute && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
